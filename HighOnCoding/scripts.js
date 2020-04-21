@@ -52,7 +52,8 @@ container.appendChild(header);
 const main = document.createElement("main");
 main.style.border = "1px solid red";
 main.style.display = "flex";
-main.style.justifyContent = "center";
+main.style.flexDirection = "column";
+main.style.alignItems = "center";
 
 const billboard = document.createElement("div");
 billboard.style.color = "#54585e";
@@ -73,3 +74,36 @@ billboardParagraph.textContent = "When you want to buy any application from the 
 billboard.appendChild(billboardParagraph);
 
 container.appendChild(main);
+
+// section
+//  first div
+//   - h3
+//   - p
+//   - footer?
+
+const section = document.createElement("section");
+section.style.border = "1px solid green";
+section.style.display = "flex";
+section.style.width = "92%"
+section.style.justifyContent = "center";
+
+const firstDiv = document.createElement("div");
+firstDiv.style.border = "1px solid blue";
+firstDiv.style.width = "100%";
+section.append(firstDiv)
+
+const firstH3 = document.createElement("h3");
+firstH3.style.color = "#2866ba";
+firstH3.textContent = "Hello WatchKit";
+firstH3.style.fontWeight = "400";
+firstH3.style.paddingLeft = "5px"
+firstH3.style.marginBottom = "0px";
+firstDiv.append(firstH3);
+
+const firstPara = document.createElement("p");
+firstPara.textContent = "Last month Apple released the anticipated WatchKit Framework for developers in the form of iOS 8.2 beta SDK release. "
+firstPara.style.paddingLeft = "5px";
+firstDiv.append(firstPara);
+
+
+main.append(section);
