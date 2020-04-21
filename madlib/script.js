@@ -20,5 +20,6 @@ myButton.addEventListener('click', function (e) {
 
     if (noun5Input.value == "yes") {
         noun5.style.display = "block";
+        
     }
 });
