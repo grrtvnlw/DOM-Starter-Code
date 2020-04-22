@@ -19,6 +19,7 @@ const heading1 = document.createElement("h1");
 heading1.textContent = "HighOnCoding";
 heading1.style.fontSize = "36px";
 heading1.style.paddingRight = "40px";
+heading1.style.fontWeight = "600";
 header.appendChild(heading1);
 
 const topNav = document.createElement("nav");
@@ -32,13 +33,13 @@ link1.href = "#";
 link1.style.paddingRight = "40px";
 link1.style.color = "white";
 link1.style.fontWeight = "bold";
-link1.style.fontSize = "22px";
+link1.style.fontSize = "24px";
 link1.style.textDecoration = "none";
 topNav.appendChild(link1);
 
 const link2 = document.createElement("a");
 link2.textContent = "Categories";
-link2.style.fontSize = "22px";
+link2.style.fontSize = "24px";
 link2.style.textDecoration = "none";
 link2.href = "#";
 link2.style.color = "white";
@@ -53,7 +54,6 @@ container.appendChild(header);
 //    - p
 
 const main = document.createElement("main");
-main.style.border = "1px solid red";
 main.style.display = "flex";
 main.style.flexDirection = "column";
 main.style.alignItems = "center";
@@ -91,14 +91,12 @@ container.appendChild(main);
 //   - bottom div
 
 const section = document.createElement("section");
-section.style.border = "1px solid green";
 section.style.display = "flex";
 section.style.flexDirection = "column";
 section.style.maxWidth = "92%"
 section.style.justifyContent = "center";
 
 const firstDiv = document.createElement("div");
-// firstDiv.style.border = "1px solid blue";
 firstDiv.style.width = "100%";
 section.append(firstDiv)
 
@@ -126,12 +124,19 @@ firstBottomDiv.style.backgroundColor = "#ff9900";
 firstBottomDiv.style.display = "flex";
 firstBottomDiv.style.padding = "5px";
 firstBottomDiv.style.marginTop = "0px";
-firstBottomDiv.textContent = "12 comments     124 Likes"
 firstBottomDiv.style.fontWeight = "500";
 firstDiv.append(firstBottomDiv)
 
+const textLeft = document.createElement("div");
+textLeft.textContent = "12 comments"
+firstBottomDiv.append(textLeft);
+
+const textRight = document.createElement("div");
+textRight.textContent = "124 Likes"
+textRight.style.paddingLeft = "40px";
+firstBottomDiv.append(textRight);
+
 const secondDiv = document.createElement("div");
-// secondDiv.style.border = "1px solid blue";
 secondDiv.style.width = "100%";
 section.append(secondDiv)
 
@@ -159,10 +164,16 @@ secondBottomDiv.style.backgroundColor = "#ff9900";
 secondBottomDiv.style.display = "flex";
 secondBottomDiv.style.padding = "5px";
 secondBottomDiv.style.marginTop = "0px";
-secondBottomDiv.textContent = "15 comments     124 Likes"
 secondBottomDiv.style.fontWeight = "500";
 secondDiv.append(secondBottomDiv)
 
-const textLeft = document.createElement("div");
+const textLeftTwo = document.createElement("div");
+textLeftTwo.textContent = "15 comments"
+secondBottomDiv.append(textLeftTwo);
+
+const textRightTwo = document.createElement("div");
+textRightTwo.textContent = "45 Likes"
+textRightTwo.style.paddingLeft = "40px";
+secondBottomDiv.append(textRightTwo);
 
 main.append(section);
