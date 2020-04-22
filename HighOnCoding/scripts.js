@@ -64,6 +64,7 @@ billboard.style.display = "flex";
 billboard.style.flexDirection = "column";
 billboard.style.width = "90%";
 billboard.style.paddingLeft = "20px";
+billboard.style.paddingRight = "20px";
 billboard.style.marginTop = "20px";
 main.appendChild(billboard)
 
